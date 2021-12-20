@@ -1,38 +1,98 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.carddiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 110px;
+  justify-content: space-around;
+}
+
+.footer {
+  width: 100%;
+  color: white;
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  height: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carditemdiv {
+  margin: 10px 0px;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.type {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.loading {
+  margin: 20px auto;
+}
+.carditemdiv:hover {
+  box-shadow: 9px 8px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 8px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 8px 14px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease;
+}
+.content h1 {
   color: white;
+  font-size: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.modalDiv {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.modalImage {
+  flex-basis: 30%;
+}
+.content {
+  flex-basis: 45%;
+}
+.content p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.boxModal {
+  overflow-y: auto;
+}
+@media only screen and (max-width: 900px) {
+  .carddiv {
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .carditem {
+    margin: 10px 15px;
+  }
+  .modalImage img {
+    height: 250px;
+    width: 170px;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .content {
+    flex-basis: 100%;
+  }
+  .content p {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .boxModal {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .modalDiv {
+    height: 100vh;
   }
 }
