@@ -21,7 +21,7 @@ const style = {
   p: 4,
 };
 const Popup = ({ children, id, type ,apiKey }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [video, setVideo] = useState();
@@ -81,18 +81,16 @@ const Popup = ({ children, id, type ,apiKey }) => {
                       ? content.release_date || content.first_air_date
                       : "Not Available"}
                   </p>
-                  {content.budget &&
+                  {content.budget && 
                     <p>
                       Budget :{" "}
-                      {content.budget
-                        ? content.budget.toString().slice(0, 3)
-                        : " Not Available"}
+                      {content.budget.toString().slice(0, 3)}
                       M
                     </p>
                   }
                   <p>
                     Genre :
-                    {content.genres.map((element) => {
+                    {content.genres && content.genres.map((element) => {
                       return (
                         <Chip
                           sx={{ marginRight: 1, marginLeft: 1, marginTop: 1 }}
@@ -113,7 +111,7 @@ const Popup = ({ children, id, type ,apiKey }) => {
                   </p>
                   <p>
                     Production Companies :
-                    {content.production_companies.map((element) => {
+                    {content.production_companies && content.production_companies.map((element) => {
                       return (
                         <Chip
                           sx={{ marginRight: 1, marginLeft: 1, marginTop: 1 }}

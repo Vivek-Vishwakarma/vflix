@@ -57,6 +57,10 @@
 .modalImage {
   flex-basis: 30%;
 }
+.tabs{
+  display: flex;
+  justify-content: center;
+}
 .content {
   flex-basis: 45%;
 }

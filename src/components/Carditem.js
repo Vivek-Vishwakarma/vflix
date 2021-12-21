@@ -37,7 +37,7 @@ export default function Carditem({ element, id, type, page, apiKey }) {
               <hr />
               <div className="type">
                 <div className="innertype">
-                  {capitalizeFirstLetter(element.media_type)}
+                  {capitalizeFirstLetter(element.media_type ? element.media_type : " ")}
                 </div>
                 <div className="innertype">
                   {element.release_date || element.first_air_date
