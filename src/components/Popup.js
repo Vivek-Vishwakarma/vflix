@@ -84,8 +84,7 @@ const Popup = ({ children, id, type ,apiKey }) => {
                   {content.budget && 
                     <p>
                       Budget :{" "}
-                      {content.budget.toString().slice(0, 3)}
-                      M
+                      {content.budget.toString()}
                     </p>
                   }
                   <p>
