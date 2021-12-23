@@ -18,21 +18,22 @@ export default function Carditem({ element, id, type, page, apiKey }) {
           badgeContent={element.vote_average}
           color={element.vote_average > 7 ? "primary" : "secondary"}
         >
-          <Card sx={{ maxWidth: 320 }} className="carditem">
+          <Card sx={{ maxWidth: 290 }} className="carditem">
             <CardMedia
               component="img"
               alt={element.original_title}
               height="300"
+              className="cardimg"
               image={`https://image.tmdb.org/t/p/w300${element.poster_path}`}
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography className="heading" variant="h6" component="div">
                 {element.name || element.title
                   ? element.name || element.title
                   : "Title not available"}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {element.overview.slice(0, 140)}
+              <Typography variant="subtitle2" className="overview" color="text.secondary">
+                {element.overview.slice(0, 120)}
               </Typography>
               <hr />
               <div className="type">

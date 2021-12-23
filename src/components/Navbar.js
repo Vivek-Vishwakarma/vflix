@@ -65,12 +65,13 @@ const Navbar = () => {
               }}
             >
               <MenuItem>
-                <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                <Link exact to="/vflix" style={{ textDecoration: "none", color: "black" }}>
                   <Typography textAlign="center">Home</Typography>
                 </Link>
               </MenuItem>
               <MenuItem href="/trending">
                 <Link
+                exact
                   to="/trending"
                   style={{ textDecoration: "none", color: "black" }}
                 >
@@ -79,6 +80,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem>
                 <Link
+                exact
                   to="/movies"
                   style={{ textDecoration: "none", color: "black" }}
                 >
@@ -87,6 +89,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem>
                 <Link
+                exact
                   to="/tvseries"
                   style={{ textDecoration: "none", color: "black" }}
                 >
@@ -95,6 +98,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem>
                 <Link
+                exact
                   to="/search"
                   style={{ textDecoration: "none", color: "black" }}
                 >
@@ -112,7 +116,7 @@ const Navbar = () => {
             Vflix
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link exact to="/vflix" style={{ textDecoration: "none" }}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -120,7 +124,7 @@ const Navbar = () => {
                 Home
               </Button>
             </Link>
-            <Link to="/trending" style={{ textDecoration: "none" }}>
+            <Link exact to="/trending" style={{ textDecoration: "none" }}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -128,7 +132,7 @@ const Navbar = () => {
                 Trending
               </Button>
             </Link>
-            <Link to="/movies" style={{ textDecoration: "none" }}>
+            <Link exact to="/movies" style={{ textDecoration: "none" }}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -136,7 +140,7 @@ const Navbar = () => {
                 Movies
               </Button>
             </Link>
-            <Link to="/tvseries" style={{ textDecoration: "none" }}>
+            <Link exact to="/tvseries" style={{ textDecoration: "none" }}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -144,7 +148,7 @@ const Navbar = () => {
                 TV Series
               </Button>
             </Link>
-            <Link to="/search" style={{ textDecoration: "none" }}>
+            <Link exact to="/search" style={{ textDecoration: "none" }}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}

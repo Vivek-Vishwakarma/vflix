@@ -64,7 +64,7 @@ const Popup = ({ children, id, type ,apiKey }) => {
               <div className="modalDiv">
                 <div className="modalImage">
                   <img
-                    src={`https://image.tmdb.org/t/p/w400${content.poster_path}`}
+                    src={`https://image.tmdb.org/t/p/w500${content.backdrop_path}`}
                     alt={content.original_title}
                   />
                 </div>

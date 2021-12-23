@@ -73,10 +73,7 @@
 }
 @media only screen and (max-width: 900px) {
   .carddiv {
-    margin: 20px;
-  }
-  .carditem {
-    margin: 10px 15px;
+    margin: 5px;
   }
   .modalImage img {
     height: 250px;
@@ -98,5 +95,17 @@
   }
   .modalDiv {
     height: 100vh;
+  }
+  .carditem{
+    width: 160px;
+  }
+  .overview{
+    font-size: 10px !important;
+  }
+  .heading{
+    font-size: 14px !important;
+  }
+  .cardimg{
+    height: 200px;
   }
 }
