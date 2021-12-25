@@ -12,7 +12,7 @@
 .carddiv {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 110px;
+  margin: 20px 80px;
   justify-content: space-around;
 }
 
@@ -72,9 +72,6 @@
   overflow-y: auto;
 }
 @media only screen and (max-width: 900px) {
-  .carddiv {
-    margin: 5px;
-  }
   .modalImage img {
     height: 250px;
     width: 170px;
@@ -88,6 +85,12 @@
   .content p {
     margin-top: 5px;
     font-size: 15px;
+  }
+  .carddiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: space-between;
   }
   .boxModal {
     overflow-y: scroll;
