@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/vflix/static/css/main.b82a8239.chunk.css",
-    "main.js": "/vflix/static/js/main.a3732e0d.chunk.js",
-    "main.js.map": "/vflix/static/js/main.a3732e0d.chunk.js.map",
+    "main.css": "/vflix/static/css/main.6229f5be.chunk.css",
+    "main.js": "/vflix/static/js/main.5c9bf6fc.chunk.js",
+    "main.js.map": "/vflix/static/js/main.5c9bf6fc.chunk.js.map",
     "runtime-main.js": "/vflix/static/js/runtime-main.b03b626c.js",
     "runtime-main.js.map": "/vflix/static/js/runtime-main.b03b626c.js.map",
     "static/js/2.1dbb5240.chunk.js": "/vflix/static/js/2.1dbb5240.chunk.js",
     "static/js/2.1dbb5240.chunk.js.map": "/vflix/static/js/2.1dbb5240.chunk.js.map",
     "index.html": "/vflix/index.html",
-    "static/css/main.b82a8239.chunk.css.map": "/vflix/static/css/main.b82a8239.chunk.css.map",
+    "static/css/main.6229f5be.chunk.css.map": "/vflix/static/css/main.6229f5be.chunk.css.map",
     "static/js/2.1dbb5240.chunk.js.LICENSE.txt": "/vflix/static/js/2.1dbb5240.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b03b626c.js",
     "static/js/2.1dbb5240.chunk.js",
-    "static/css/main.b82a8239.chunk.css",
-    "static/js/main.a3732e0d.chunk.js"
+    "static/css/main.6229f5be.chunk.css",
+    "static/js/main.5c9bf6fc.chunk.js"
   ]
 }
