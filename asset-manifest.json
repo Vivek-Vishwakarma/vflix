@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vflix/static/css/main.6229f5be.chunk.css",
-    "main.js": "/vflix/static/js/main.5c9bf6fc.chunk.js",
-    "main.js.map": "/vflix/static/js/main.5c9bf6fc.chunk.js.map",
+    "main.js": "/vflix/static/js/main.08b74a10.chunk.js",
+    "main.js.map": "/vflix/static/js/main.08b74a10.chunk.js.map",
     "runtime-main.js": "/vflix/static/js/runtime-main.b03b626c.js",
     "runtime-main.js.map": "/vflix/static/js/runtime-main.b03b626c.js.map",
     "static/js/2.1dbb5240.chunk.js": "/vflix/static/js/2.1dbb5240.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b03b626c.js",
     "static/js/2.1dbb5240.chunk.js",
     "static/css/main.6229f5be.chunk.css",
-    "static/js/main.5c9bf6fc.chunk.js"
+    "static/js/main.08b74a10.chunk.js"
   ]
 }
