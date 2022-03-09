@@ -6,7 +6,7 @@ import { Badge } from "@mui/material";
 import "../App.css";
 import Popup from "./Popup";
 
-export default function Carditem({ element, id, type, page, apiKey }) {
+export default function Carditem({ element, id, type, apiKey }) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }

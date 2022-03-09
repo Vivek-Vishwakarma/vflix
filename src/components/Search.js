@@ -101,7 +101,7 @@ const Search = ({ apiKey }) => {
           >
             {genre &&
               genre.map((element) => {
-                return <MenuItem value={element.id}>{element.name}</MenuItem>;
+                return <MenuItem key={element.id} value={element.id}>{element.name}</MenuItem>;
               })}
           </Select>
         </FormControl>

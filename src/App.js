@@ -17,11 +17,11 @@ function App() {
         <Navbar />
         <ScrollToTop smooth />
         <Routes>
-          <Route exact path="/vflix" element={<Homepage apiKey={apiKey} />} />
-          <Route exact path="/trending" element={<Trending apiKey={apiKey} />} />
-          <Route exact path="/movies" element={<Movies apiKey={apiKey} />} />
-          <Route exact path="/tvseries" element={<Tv apiKey={apiKey} />} />
-          <Route exact path="/search" element={<Search apiKey={apiKey} />} />
+          <Route exact="true" path="/vflix" element={<Homepage apiKey={apiKey} />} />
+          <Route exact="true" path="/trending" element={<Trending apiKey={apiKey} />} />
+          <Route exact="true" path="/movies" element={<Movies apiKey={apiKey} />} />
+          <Route exact="true" path="/tvseries" element={<Tv apiKey={apiKey} />} />
+          <Route exact="true" path="/search" element={<Search apiKey={apiKey} />} />
         </Routes>
         <Footer />
       </Router>

@@ -87,39 +87,41 @@ const Popup = ({ children, id, type ,apiKey }) => {
                       {content.budget.toString()}
                     </p>
                   }
-                  <p>
+                  <div>
                     Genre :
                     {content.genres && content.genres.map((element) => {
                       return (
                         <Chip
+                          key={element.id}
                           sx={{ marginRight: 1, marginLeft: 1, marginTop: 1 }}
                           label={element.name}
                           color="primary"
                         />
                       );
                     })}
-                  </p>
+                  </div>
                   <p>Status : {content.status}</p>
-                  <p>
+                  <div>
                     Rating :
                     <Chip
                       sx={{ marginLeft: 1 }}
                       label={content.vote_average}
                       color={content.vote_average > 7 ? "primary" : "secondary"}
                     />
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     Production Companies :
                     {content.production_companies && content.production_companies.map((element) => {
                       return (
                         <Chip
+                          key={element.id}
                           sx={{ marginRight: 1, marginLeft: 1, marginTop: 1 }}
                           label={element.name}
                           color="secondary"
                         />
                       );
                     })}
-                  </p>
+                  </div>
                   <Button
                     variant="contained"
                     sx={{ marginTop: 3, bgcolor: "error.main", width: "100%" }}

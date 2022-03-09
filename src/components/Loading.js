@@ -4,7 +4,7 @@ import "../App.css"
 const Loading = () => {
     return (
         <>
-             <ReactLoading className='loading' type={"spinningBubbles"} color={"#3366cc"} height={"50px"} width={'50px'} />
+            <ReactLoading className='loading' type={"spinningBubbles"} color={"#3366cc"} height={"50px"} width={'50px'} />
         </>
     )
 }
